@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KhoJo | A Course Search Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1 style="color: #333D79FF;">KhoJo.</h1>
+        <div class="navigation">
+            <ul>
+                <a id="menu-close" class="fas fa-times"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="about-home">
+        <h2>We Are Here For You</h2>
+    </section>
+
+    <section id="contact">
+        <div class="getin">
+            <h2>Get In Touch</h2>
+            <p>Looking for help? Fill the form and start a new adventure.</p>
+            <div class="getin-details">
+                <i data-lucide="mail"></i>
+                <h3>Headquarters</h3>
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <p>Pune, Maharashtra</p>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+        <form action="https://formspree.io/f/mpzvalwv" method="POST">
+            <h4>Let's Connect</h4>
+            <p>Fill out the form below and we'll get back to you shortly.</p>
+            <div class="form-row">
+                <input type="text" name="username" placeholder="Your Name" autoComplete="off" required />
+                <input type="email" name="email" placeholder="Email" autoComplete="off" required />
+            </div>
+            <div class="form-col">
+                <textarea name="message" id="" cols="30" rows="8" placeholder="How can we help?" autoComplete="off"
+                    required></textarea>
+            </div>
+            <div class="form-col">
+                <button>Send Message</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773036.572314426!2d61.03835229282616!3d19.692425762592325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1687886602468!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h1 style="color: aliceblue;">KhoJo Coders KhoJo...</h1>
+            <p>In this website you can find information regarding what should you have to do and how you can achieve
+                your target destiny with guided roadmap.</p>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©2023 All rights reserved | This template is made by <a href="https://github.com/mayurpatil45/"
+                    target="_blank">Mayur Patil</a></p>
+            <div class="pro-links">
+                <a href="https://www.facebook.com/profile.php?id=100012030933316&mibextid=kFxxJD" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/themayur27/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mayurpatil27/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $("#menu-btn").click(function () {
+                $("nav .navigation ul").addClass("active");
+            });
+
+            $("#menu-close").click(function () {
+                $("nav .navigation ul").removeClass("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
